@@ -14,5 +14,6 @@ create table diary(
 -- insert into alliph 
 INSERT INTO diary (id, name, thoughts) values (1, 'yuhana', 'three messengers');
 
--- views data in alliph 
+-- view data in alliph 
+select * from diary;
 
