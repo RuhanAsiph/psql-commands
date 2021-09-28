@@ -6,13 +6,13 @@ CREATE DATABASE alliph;
 
 -- create table 
 create table diary( 
-	id INT, 
-	name VARCHAR(20), 
-	thoughts VARCHAR(500)
+	id BIGSERIAL NOT NULL PRIMARY KEY, 
+	name VARCHAR(20) NOT NULL, 
+	thoughts VARCHAR(500) NOT NULL
 );
 
 -- insert into alliph 
-INSERT INTO diary (id, name, thoughts) values (1, 'yuhana', 'three messengers');
+INSERT INTO diary (name, thoughts) values ('yuhana', 'three messengers');
 
 -- view data in alliph 
 select * from diary;
